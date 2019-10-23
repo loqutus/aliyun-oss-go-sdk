@@ -740,7 +740,7 @@ func (um urlMaker) buildURL(bucket, object string) (string, string) {
 			host = um.NetLoc
 			path = "/"
 		} else {
-			host = bucket + "." + um.NetLoc
+			host = um.NetLoc
 			path = "/" + object
 		}
 	}
